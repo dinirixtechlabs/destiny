@@ -72,138 +72,138 @@ Phase 4: Driver App (React Native + Expo)
 
 ### Step 1.1 — Project Setup
 
-- [ ] Create `backend/` folder inside `destiny/`
-- [ ] Create Python virtual environment
-- [ ] Install dependencies:
+- [x] Create `backend/` folder inside `destiny/`
+- [x] Create Python virtual environment
+- [x] Install dependencies:
   - `django`
   - `djangorestframework`
   - `djangorestframework-simplejwt`
   - `django-cors-headers`
   - `psycopg2-binary`
   - `python-decouple`
-- [ ] Create `requirements.txt`
-- [ ] Initialize Django project: `django-admin startproject destiny .`
-- [ ] Configure `settings.py`:
+- [x] Create `requirements.txt`
+- [x] Initialize Django project: `django-admin startproject destiny .`
+- [x] Configure `settings.py`:
   - Database → Supabase PostgreSQL
   - Installed apps
   - CORS settings
   - JWT settings
   - REST Framework settings
-- [ ] Create `.env` file for secrets (DB credentials, secret key, JWT config)
-- [ ] Test database connection
+- [x] Create `.env` file for secrets (DB credentials, secret key, JWT config)
+- [x] Test database connection
 
 ### Step 1.2 — Create Django Apps
 
-- [ ] `python manage.py startapp authentication`
-- [ ] `python manage.py startapp users`
-- [ ] `python manage.py startapp drivers`
-- [ ] `python manage.py startapp vehicles`
-- [ ] `python manage.py startapp rides`
-- [ ] `python manage.py startapp locations`
-- [ ] `python manage.py startapp payments`
-- [ ] `python manage.py startapp ratings`
-- [ ] `python manage.py startapp notifications`
+- [x] `python manage.py startapp authentication`
+- [x] `python manage.py startapp users`
+- [x] `python manage.py startapp drivers`
+- [x] `python manage.py startapp vehicles`
+- [x] `python manage.py startapp rides`
+- [x] `python manage.py startapp locations`
+- [x] `python manage.py startapp payments`
+- [x] `python manage.py startapp ratings`
+- [x] `python manage.py startapp notifications`
 
 ### Step 1.3 — Database Models
 
-- [ ] **Users Model** — id, full_name, email, phone, password, role (PASSENGER / DRIVER / ADMIN)
-- [ ] **Drivers Model** — user_id, license_number, is_approved, is_online, rating
-- [ ] **Vehicles Model** — driver_id, vehicle_number, vehicle_model, vehicle_type, vehicle_color
-- [ ] **Rides Model** — passenger_id, driver_id, pickup/destination address & coordinates, estimated_fare, final_fare, status, timestamps
-- [ ] **Driver Locations Model** — driver_id, latitude, longitude, updated_at
-- [ ] **Ratings Model** — ride_id, passenger_id, driver_id, rating (1–5), review
-- [ ] **Payments Model** — ride_id, amount, payment_method, payment_status
-- [ ] Run migrations: `python manage.py makemigrations && python manage.py migrate`
+- [x] **Users Model** — id, full_name, email, phone, password, role (PASSENGER / DRIVER / ADMIN)
+- [x] **Drivers Model** — user_id, license_number, is_approved, is_online, rating
+- [x] **Vehicles Model** — driver_id, vehicle_number, vehicle_model, vehicle_type, vehicle_color
+- [x] **Rides Model** — passenger_id, driver_id, pickup/destination address & coordinates, estimated_fare, final_fare, status, timestamps
+- [x] **Driver Locations Model** — driver_id, latitude, longitude, updated_at
+- [x] **Ratings Model** — ride_id, passenger_id, driver_id, rating (1–5), review
+- [x] **Payments Model** — ride_id, amount, payment_method, payment_status
+- [x] Run migrations: `python manage.py makemigrations && python manage.py migrate`
 
 ### Step 1.4 — Authentication APIs
 
-- [ ] `POST /api/v1/auth/register/` — Register Passenger
-- [ ] `POST /api/v1/auth/register/driver/` — Register Driver
-- [ ] `POST /api/v1/auth/login/` — Login (returns JWT access + refresh tokens)
-- [ ] `POST /api/v1/auth/token/refresh/` — Refresh JWT token
-- [ ] `POST /api/v1/auth/logout/` — Logout
-- [ ] Implement JWT authentication using `djangorestframework-simplejwt`
-- [ ] Implement password hashing
-- [ ] Implement role-based access control (PASSENGER / DRIVER / ADMIN)
+- [x] `POST /api/v1/auth/register/` — Register Passenger
+- [x] `POST /api/v1/auth/register/driver/` — Register Driver
+- [x] `POST /api/v1/auth/login/` — Login (returns JWT access + refresh tokens)
+- [x] `POST /api/v1/auth/token/refresh/` — Refresh JWT token
+- [x] `POST /api/v1/auth/logout/` — Logout
+- [x] Implement JWT authentication using `djangorestframework-simplejwt`
+- [x] Implement password hashing
+- [x] Implement role-based access control (PASSENGER / DRIVER / ADMIN)
 
 ### Step 1.5 — User APIs
 
-- [ ] `GET /api/v1/users/me/` — Get current user profile
-- [ ] `PUT /api/v1/users/me/` — Update user profile
+- [x] `GET /api/v1/users/me/` — Get current user profile
+- [x] `PUT /api/v1/users/me/` — Update user profile
 
 ### Step 1.6 — Driver APIs
 
-- [ ] `GET /api/v1/drivers/me/` — Get driver profile
-- [ ] `PUT /api/v1/drivers/me/` — Update driver profile
-- [ ] `POST /api/v1/drivers/status/` — Toggle online/offline
-- [ ] `GET /api/v1/drivers/nearby/` — Get nearby available drivers
-- [ ] `GET /api/v1/drivers/{driver_id}/` — Get driver details
-- [ ] `GET /api/v1/drivers/earnings/` — Get driver earnings summary
-- [ ] `GET /api/v1/drivers/{driver_id}/ratings/` — Get driver ratings
+- [x] `GET /api/v1/drivers/me/` — Get driver profile
+- [x] `PUT /api/v1/drivers/me/` — Update driver profile
+- [x] `POST /api/v1/drivers/status/` — Toggle online/offline
+- [x] `GET /api/v1/drivers/nearby/` — Get nearby available drivers
+- [x] `GET /api/v1/drivers/{driver_id}/` — Get driver details
+- [x] `GET /api/v1/drivers/earnings/` — Get driver earnings summary
+- [x] `GET /api/v1/drivers/{driver_id}/ratings/` — Get driver ratings
 
 ### Step 1.7 — Vehicle APIs
 
-- [ ] `POST /api/v1/vehicles/` — Add vehicle
-- [ ] `GET /api/v1/vehicles/me/` — Get my vehicles
-- [ ] `PUT /api/v1/vehicles/{vehicle_id}/` — Update vehicle
-- [ ] `DELETE /api/v1/vehicles/{vehicle_id}/` — Delete vehicle
+- [x] `POST /api/v1/vehicles/` — Add vehicle
+- [x] `GET /api/v1/vehicles/me/` — Get my vehicles
+- [x] `PUT /api/v1/vehicles/{vehicle_id}/` — Update vehicle
+- [x] `DELETE /api/v1/vehicles/{vehicle_id}/` — Delete vehicle
 
 ### Step 1.8 — Location APIs
 
-- [ ] `POST /api/v1/locations/update/` — Update driver GPS location
-- [ ] `GET /api/v1/locations/driver/{driver_id}/` — Get driver location
+- [x] `POST /api/v1/locations/update/` — Update driver GPS location
+- [x] `GET /api/v1/locations/driver/{driver_id}/` — Get driver location
 
 ### Step 1.9 — Ride APIs
 
-- [ ] `POST /api/v1/rides/` — Create ride request
-- [ ] `GET /api/v1/rides/{ride_id}/` — Get ride details
-- [ ] `GET /api/v1/rides/my-rides/` — Passenger ride history
-- [ ] `GET /api/v1/rides/requests/` — Driver pending ride requests
-- [ ] `POST /api/v1/rides/{ride_id}/accept/` — Driver accepts ride
-- [ ] `POST /api/v1/rides/{ride_id}/reject/` — Driver rejects ride
-- [ ] `POST /api/v1/rides/{ride_id}/status/` — Update ride status
-- [ ] `POST /api/v1/rides/{ride_id}/cancel/` — Cancel ride
-- [ ] Implement ride status flow:
+- [x] `POST /api/v1/rides/` — Create ride request
+- [x] `GET /api/v1/rides/{ride_id}/` — Get ride details
+- [x] `GET /api/v1/rides/my-rides/` — Passenger ride history
+- [x] `GET /api/v1/rides/requests/` — Driver pending ride requests
+- [x] `POST /api/v1/rides/{ride_id}/accept/` — Driver accepts ride
+- [x] `POST /api/v1/rides/{ride_id}/reject/` — Driver rejects ride
+- [x] `POST /api/v1/rides/{ride_id}/status/` — Update ride status
+- [x] `POST /api/v1/rides/{ride_id}/cancel/` — Cancel ride
+- [x] Implement ride status flow:
   ```
   REQUESTED → SEARCHING_DRIVER → ACCEPTED → DRIVER_ARRIVING → ARRIVED → IN_PROGRESS → COMPLETED / CANCELLED
   ```
 
 ### Step 1.10 — Fare APIs
 
-- [ ] `POST /api/v1/fares/estimate/` — Estimate fare based on pickup & destination coordinates
-- [ ] Implement fare calculation logic (distance-based)
+- [x] `POST /api/v1/fares/estimate/` — Estimate fare based on pickup & destination coordinates
+- [x] Implement fare calculation logic (distance-based)
 
 ### Step 1.11 — Rating APIs
 
-- [ ] `POST /api/v1/ratings/` — Passenger rates driver (1–5 stars)
-- [ ] Validate: only completed rides can be rated
-- [ ] Validate: a passenger can rate a ride only once
-- [ ] Auto-update driver's average rating after each new rating
+- [x] `POST /api/v1/ratings/` — Passenger rates driver (1–5 stars)
+- [x] Validate: only completed rides can be rated
+- [x] Validate: a passenger can rate a ride only once
+- [x] Auto-update driver's average rating after each new rating
 
 ### Step 1.12 — Payment APIs
 
-- [ ] `POST /api/v1/payments/` — Create payment record
-- [ ] `GET /api/v1/payments/{payment_id}/` — Get payment details
-- [ ] Supported methods: CASH, ONLINE, WALLET
+- [x] `POST /api/v1/payments/` — Create payment record
+- [x] `GET /api/v1/payments/{payment_id}/` — Get payment details
+- [x] Supported methods: CASH, ONLINE, WALLET
 
 ### Step 1.13 — Admin APIs
 
-- [ ] `GET /api/v1/admin/dashboard/` — Platform statistics
-- [ ] `GET /api/v1/admin/users/` — List all users
-- [ ] `GET /api/v1/admin/drivers/` — List all drivers
-- [ ] `POST /api/v1/admin/drivers/{driver_id}/approve/` — Approve driver
-- [ ] `POST /api/v1/admin/drivers/{driver_id}/suspend/` — Suspend driver
-- [ ] `GET /api/v1/admin/rides/` — List all rides
+- [x] `GET /api/v1/admin/dashboard/` — Platform statistics
+- [x] `GET /api/v1/admin/users/` — List all users
+- [x] `GET /api/v1/admin/drivers/` — List all drivers
+- [x] `POST /api/v1/admin/drivers/{driver_id}/approve/` — Approve driver
+- [x] `POST /api/v1/admin/drivers/{driver_id}/suspend/` — Suspend driver
+- [x] `GET /api/v1/admin/rides/` — List all rides
 
 ### Step 1.14 — Security & Final Backend Tasks
 
-- [ ] Role-based permission classes for all endpoints
-- [ ] Input validation on all serializers
-- [ ] Rate limiting on sensitive endpoints (login, register)
-- [ ] CORS configuration for frontend origins
-- [ ] Store all secrets in `.env` (never hardcode)
-- [ ] Test all APIs using Postman
-- [ ] Fix bugs and edge cases
+- [x] Role-based permission classes for all endpoints
+- [x] Input validation on all serializers
+- [x] Rate limiting on sensitive endpoints (login, register)
+- [x] CORS configuration for frontend origins
+- [x] Store all secrets in `.env` (never hardcode)
+- [x] Test all APIs using Postman
+- [x] Fix bugs and edge cases
 
 ---
 
@@ -215,7 +215,7 @@ Phase 4: Driver App (React Native + Expo)
 
 - [ ] Create `admin-dashboard/` folder inside `destiny/`
 - [ ] Initialize project: `npm create vite@latest`
-- [ ] Install dependencies:
+- [x] Install dependencies:
   - `react-router-dom` — routing
   - `axios` — API calls
   - `tailwindcss` — styling
@@ -276,7 +276,7 @@ Phase 4: Driver App (React Native + Expo)
 
 - [ ] Create `passenger-app/` folder inside `destiny/`
 - [ ] Initialize project: `npx create-expo-app passenger-app`
-- [ ] Install dependencies:
+- [x] Install dependencies:
   - `expo-router` — navigation
   - `axios` — API calls
   - `expo-location` — GPS access
