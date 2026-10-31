@@ -1,8 +1,8 @@
-# RideX API Design
+# destiny API Design
 
 ## 1. Overview
 
-This document defines the REST API structure for the RideX platform.
+This document defines the REST API structure for the destiny platform.
 
 The API will be used by:
 
@@ -29,7 +29,7 @@ https://your-domain.com/api/v1/
 
 # 2. Authentication
 
-RideX uses JWT (JSON Web Token) authentication.
+destiny uses JWT (JSON Web Token) authentication.
 
 After successful login, the backend returns:
 
@@ -789,7 +789,7 @@ Future versions can use:
 /api/v2/
 ```
 
-This allows RideX to improve APIs without immediately breaking older application versions.
+This allows destiny to improve APIs without immediately breaking older application versions.
 
 ---
 

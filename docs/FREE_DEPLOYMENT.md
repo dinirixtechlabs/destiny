@@ -25,8 +25,8 @@ Submit to Amazon Appstore
 The driver application is a separate React Native + Expo application.
 
 ```text
-RideX Passenger App
-RideX Driver App
+destiny Passenger App
+destiny Driver App
 ```
 
 Both applications can be packaged and submitted separately to the Amazon Appstore.
@@ -76,8 +76,8 @@ Use:
 ```text
 Amazon Appstore
       │
-      ├── RideX Passenger App
-      └── RideX Driver App
+      ├── destiny Passenger App
+      └── destiny Driver App
                │
                ▼
         Django REST API

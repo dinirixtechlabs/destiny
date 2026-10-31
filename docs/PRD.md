@@ -1,10 +1,10 @@
 # Product Requirements Document (PRD)
 
 ## Project Name
-**RideX** *(temporary project name)*
+**destiny**
 
 ## 1. Product Overview
-RideX is a ride-booking platform inspired by services such as Uber and Ola. The system connects passengers with nearby drivers through mobile applications.
+destiny is a ride-booking platform inspired by services such as Uber and Ola. The system connects passengers with nearby drivers through mobile applications.
 
 The platform consists of:
 - Passenger Mobile App
@@ -16,7 +16,7 @@ The platform consists of:
 ## 2. Problem Statement
 Passengers need a convenient way to request transportation, while drivers need a platform to receive and manage ride requests.
 
-RideX provides a digital platform where:
+destiny provides a digital platform where:
 1. Passengers request rides.
 2. Nearby drivers receive ride requests.
 3. Drivers accept or reject requests.
