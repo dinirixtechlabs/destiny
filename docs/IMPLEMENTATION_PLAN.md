@@ -213,58 +213,58 @@ Phase 4: Driver App (React Native + Expo)
 
 ### Step 2.1 — Project Setup
 
-- [ ] Create `admin-dashboard/` folder inside `destiny/`
-- [ ] Initialize project: `npm create vite@latest`
+- [x] Create `admin-dashboard/` folder inside `destiny/`
+- [x] Initialize project: `npm create vite@latest`
 - [x] Install dependencies:
   - `react-router-dom` — routing
   - `axios` — API calls
   - `tailwindcss` — styling
   - `recharts` or `chart.js` — analytics charts
-- [ ] Configure Tailwind CSS
-- [ ] Configure Axios base URL pointing to Django backend
-- [ ] Set up `.env` for API URL
+- [x] Configure Tailwind CSS
+- [x] Configure Axios base URL pointing to Django backend
+- [x] Set up `.env` for API URL
 
 ### Step 2.2 — Authentication
 
-- [ ] Login page (email + password)
-- [ ] JWT token storage (localStorage)
-- [ ] Protected routes (redirect to login if not authenticated)
-- [ ] Logout functionality
+- [x] Login page (email + password)
+- [x] JWT token storage (localStorage)
+- [x] Protected routes (redirect to login if not authenticated)
+- [x] Logout functionality
 
 ### Step 2.3 — Dashboard Page
 
-- [ ] Display platform statistics:
+- [x] Display platform statistics:
   - Total Passengers
   - Total Drivers
   - Active Drivers
   - Total Rides
   - Active Rides
-- [ ] Charts for ride trends, earnings overview
+- [x] Charts for ride trends, earnings overview
 
 ### Step 2.4 — User Management
 
-- [ ] List all passengers
-- [ ] Search and filter passengers
-- [ ] View passenger details
+- [x] List all passengers
+- [x] Search and filter passengers
+- [x] View passenger details
 
 ### Step 2.5 — Driver Management
 
-- [ ] List all drivers with approval status
-- [ ] Approve driver account
-- [ ] Suspend driver account
-- [ ] View driver details (license, vehicle, rating)
+- [x] List all drivers with approval status
+- [x] Approve driver account
+- [x] Suspend driver account
+- [x] View driver details (license, vehicle, rating)
 
 ### Step 2.6 — Ride Management
 
-- [ ] List all rides with status filter
-- [ ] View ride details (passenger, driver, route, fare)
-- [ ] Monitor active rides
+- [x] List all rides with status filter
+- [x] View ride details (passenger, driver, route, fare)
+- [x] Monitor active rides
 
 ### Step 2.7 — Final Admin Dashboard Tasks
 
-- [ ] Responsive design (works on desktop and tablet)
-- [ ] Error handling and loading states
-- [ ] Test all features end-to-end with real backend
+- [x] Responsive design (works on desktop and tablet)
+- [x] Error handling and loading states
+- [x] Test all features end-to-end with real backend
 
 ---
 
@@ -283,7 +283,7 @@ Phase 4: Driver App (React Native + Expo)
   - `react-native-maps` — map display
   - `@react-native-async-storage/async-storage` — token storage
 - [ ] Configure Axios base URL
-- [ ] Set up `.env` for API URL
+- [x] Set up `.env` for API URL
 
 ### Step 3.2 — Authentication Screens
 
