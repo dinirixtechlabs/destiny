@@ -274,67 +274,67 @@ Phase 4: Driver App (React Native + Expo)
 
 ### Step 3.1 — Project Setup
 
-- [ ] Create `passenger-app/` folder inside `destiny/`
-- [ ] Initialize project: `npx create-expo-app passenger-app`
+- [x] Create `passenger-app/` folder inside `destiny/`
+- [x] Initialize project: `npx create-expo-app passenger-app`
 - [x] Install dependencies:
   - `expo-router` — navigation
   - `axios` — API calls
   - `expo-location` — GPS access
   - `react-native-maps` — map display
   - `@react-native-async-storage/async-storage` — token storage
-- [ ] Configure Axios base URL
+- [x] Configure Axios base URL
 - [x] Set up `.env` for API URL
 
 ### Step 3.2 — Authentication Screens
 
-- [ ] Splash / Welcome Screen
-- [ ] Register Screen (full_name, email, phone, password)
-- [ ] Login Screen (email, password)
-- [ ] JWT token storage using AsyncStorage
-- [ ] Auto-login if token exists
+- [x] Splash / Welcome Screen
+- [x] Register Screen (full_name, email, phone, password)
+- [x] Login Screen (email, password)
+- [x] JWT token storage using AsyncStorage
+- [x] Auto-login if token exists
 
 ### Step 3.3 — Profile Screens
 
-- [ ] View Profile Screen
-- [ ] Edit Profile Screen (full_name, phone)
-- [ ] Logout
+- [x] View Profile Screen
+- [x] Edit Profile Screen (full_name, phone)
+- [x] Logout
 
 ### Step 3.4 — Home / Booking Screen
 
-- [ ] Map view showing current location
-- [ ] Pickup location input (auto-fill with current GPS)
-- [ ] Destination input
-- [ ] Show fare estimate after destination selected
-- [ ] "Book Ride" button
+- [x] Map view showing current location
+- [x] Pickup location input (auto-fill with current GPS)
+- [x] Destination input
+- [x] Show fare estimate after destination selected
+- [x] "Book Ride" button
 
 ### Step 3.5 — Ride Tracking Screen
 
-- [ ] Show current ride status
-- [ ] Show assigned driver details (name, vehicle, rating)
-- [ ] Real-time status updates:
+- [x] Show current ride status
+- [x] Show assigned driver details (name, vehicle, rating)
+- [x] Real-time status updates:
   ```
   SEARCHING_DRIVER → ACCEPTED → DRIVER_ARRIVING → ARRIVED → IN_PROGRESS → COMPLETED
   ```
-- [ ] Cancel ride option (before driver arrives)
+- [x] Cancel ride option (before driver arrives)
 
 ### Step 3.6 — Rating Screen
 
-- [ ] Show after ride is COMPLETED
-- [ ] 1–5 star rating selector
-- [ ] Optional review text input
-- [ ] Submit rating
+- [x] Show after ride is COMPLETED
+- [x] 1–5 star rating selector
+- [x] Optional review text input
+- [x] Submit rating
 
 ### Step 3.7 — Ride History Screen
 
-- [ ] List all past rides
-- [ ] Show ride details (date, route, fare, driver, status)
+- [x] List all past rides
+- [x] Show ride details (date, route, fare, driver, status)
 
 ### Step 3.8 — Final Passenger App Tasks
 
-- [ ] Handle network errors gracefully
-- [ ] Loading indicators on all API calls
-- [ ] Test on Android device / emulator
-- [ ] Create release build
+- [x] Handle network errors gracefully
+- [x] Loading indicators on all API calls
+- [x] Test on Android device / emulator
+- [x] Create release build
 - [ ] Submit to Amazon Appstore
 
 ---

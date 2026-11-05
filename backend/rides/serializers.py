@@ -43,22 +43,22 @@ class RideCreateSerializer(serializers.ModelSerializer):
     def validate_pickup_latitude(self, value):
         if not (-90.0 <= float(value) <= 90.0):
             raise serializers.ValidationError("Invalid latitude.")
-        return value
+        return round(float(value), 6)
 
     def validate_destination_latitude(self, value):
         if not (-90.0 <= float(value) <= 90.0):
             raise serializers.ValidationError("Invalid latitude.")
-        return value
+        return round(float(value), 6)
 
     def validate_pickup_longitude(self, value):
         if not (-180.0 <= float(value) <= 180.0):
             raise serializers.ValidationError("Invalid longitude.")
-        return value
+        return round(float(value), 6)
 
     def validate_destination_longitude(self, value):
         if not (-180.0 <= float(value) <= 180.0):
             raise serializers.ValidationError("Invalid longitude.")
-        return value
+        return round(float(value), 6)
 
     def create(self, validated_data):
         passenger = self.context['request'].user
